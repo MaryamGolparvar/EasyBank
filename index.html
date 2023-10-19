@@ -20,6 +20,7 @@
   <title>Easybank landing page</title>
 </head>
 <body>
+    <!-- header section = website logo  + main navigaton menu -->
     <header class="header">
 
         <nav>
@@ -53,5 +54,19 @@
   
   
       </header>
+
+
+
+      <script>
+        const hamMenu = document.querySelector("#hamMenu");
+        hamMenu.addEventListener("click", function () {
+          console.log("click hamburger");
+          if (hamMenu.classList.contains("open")) {
+            hamMenu.classList.remove("open");
+          } else {
+            hamMenu.classList.add("open");
+          }
+        });
+      </script>
 </body>
 </html>
