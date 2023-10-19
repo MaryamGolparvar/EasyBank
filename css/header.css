@@ -1,0 +1,115 @@
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    z-index: 1;
+  }
+  .header__logo img {
+    width: 8.8125rem;
+    height: 1.375rem;
+  }
+  .header__menu span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: var(--DarkBlue);
+    transition: all 300ms ease-in-out;
+    transform-origin: 2px 1.3px;
+  
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  
+  .header__menu.open span:first-child {
+    transform: rotate(45deg);
+  }
+  
+  .header__menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .header__menu.open span:last-child {
+    transform: rotate(-45deg);
+  }
+  
+  .slider {
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--White);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 30px,
+      rgba(17, 17, 26, 0.1) 0px 16px 60px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    > a {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+      color: var(--GrayishBlue);
+      &:hover {
+        background-color: var(--VeryLightGray);
+      }
+    }
+  }
+  .header__menu:focus ~ .slider {
+    display: flex;
+  }
+  .header__links {
+    height: 30px;
+  }
+  .header__links a {
+    display: inline-block;
+    height: inherit;
+    font-size: var(--font-sm);
+    color: var(--GrayishBlue);
+    transition: color 300ms ease-in-out, border-bottom 200ms linear;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+    &:hover {
+      color: var(--DarkBlue);
+      border-bottom: 0.17rem solid;
+      border-image-source: linear-gradient(
+        to right,
+        var(--LimeGreen),
+        var(--BrightCyan)
+      );
+      border-image-slice: 1;
+    }
+  }
+  
+  button,
+  .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.875rem;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: var(--font-sm);
+    cursor: pointer;
+    background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    color: var(--White);
+    border: 0;
+    transition: opacity 300ms ease-in-out;
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+  .button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity:  0;
+    transition:opacity 150ms ease-in-out;
+  
+  }

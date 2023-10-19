@@ -1,0 +1,16 @@
+@media screen and (min-width:40em) {
+    
+}
+
+@media screen and (min-width:60em) {
+    .hideInDesktop {
+        display: none;
+      }
+}
+
+@media screen and (max-width:60em) {
+    .hideInMobile {
+        display: none;
+      }
+    
+}
