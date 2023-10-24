@@ -62,22 +62,24 @@ html {
     line-height: 1.5;
     margin-bottom: 2.25rem;
   }
+.main__container{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 69.3125rem;
+  margin: 0 auto;
+}
 
-
-  .container {
-    padding-top: 4.375rem;
-    padding-right: 1.5rem;
-    padding-bottom: 4.375rem;
-    padding-left: 1.5rem;
-    max-width: 63.375rem;
-    margin: 0 auto;
-  }
-  
+/* .hero__container {
+  padding-right: 1.5rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+  max-width: 63.375rem;
+  margin: 0 auto;
+} */
+  /*
   .hero__container {
-    padding-right: 1.5rem;
     padding-bottom: 4.375rem;
-    padding-left: 1.5rem;
-    max-width: 63.375rem;
+   max-width: 63.375rem;
     margin: 0 auto;
   }
   
@@ -87,4 +89,4 @@ html {
     max-width: 63.375rem;
     margin: 0 auto;
   }
-  
+   */

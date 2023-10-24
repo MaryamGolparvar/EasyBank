@@ -49,6 +49,8 @@ nav {
     display: none;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 5px;
     align-items: center;
     text-align: center;
     background-color: var(--White);
